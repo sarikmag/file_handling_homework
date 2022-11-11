@@ -9,5 +9,5 @@ def main(data:str):
     r = f.split(',')
     return r
 f = open("txt_file/data01.txt").read()
-print(main("1,2,3,4,5,6,7"))
+print(main(f))
 # Read data from file
