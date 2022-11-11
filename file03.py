@@ -6,7 +6,6 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    f = open("txt_file/"+data).read()
     i=0
     r=[]
     while i<len(f):
@@ -14,5 +13,6 @@ def main(data:str):
             r+=f[i]
         i+=1
     return r
-print(main("data03.txt"))
+f = open("txt_file/data03.txt").read()
+print(main(f))
 # Read data from file

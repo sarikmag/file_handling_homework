@@ -6,7 +6,7 @@ def main(data:str):
     Returns:
         list: return answer
     """
-    f = open("txt_file/"+data).read()
+
     a=0
     b=0
     c=[]
@@ -20,5 +20,6 @@ def main(data:str):
     c+=[a]
     c+=[b]
     return c
-print(main("data05.txt"))
+f = open("txt_file/data05.txt").read()
+print(main(f))
 # Read data from file
